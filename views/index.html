@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+{% if is_user %}
+<a class="p-2 text-muted" data-bs-toggle="modal" href="#login">로그아웃</a>
+{% else %}
+<a class="p-2 text-muted" data-bs-toggle="modal" href="#login">로그인</a>
+<a class="p-2 text-muted" data-bs-toggle="modal" href="#sign-up">회원가입</a>
+{% endif %}
+
+{% endblock %}
